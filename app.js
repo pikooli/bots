@@ -25,7 +25,7 @@ const main = async () => {
     
     // Generate a fake email with yopmail.com domain
     // const provider= 'nori24.tv';
-    const provider= '@haben-wir.com';
+    const provider= 'haben-wir.com';
 
     const fakeEmail = faker.internet.email({provider: provider});
     
