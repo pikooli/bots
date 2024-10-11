@@ -2,7 +2,8 @@ const puppeteer = require('puppeteer');
 const {faker} = require('@faker-js/faker');
 
 const main = async () => {
-    const browser = await puppeteer.launch({ headless: false, });
+    const browser = await puppeteer.launch({ headless: false,   args: ['--disable-dev-shm-usage'],
+    });
     const page = await browser.newPage();
     page.setViewport({ width: 1200, height: 800 });
     // Navigate the page to a URL
